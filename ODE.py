@@ -412,11 +412,12 @@ class ODE:
 #---------------------------------------------------------------------
 
     ###################################################################
-    #  dirPRC computes an approximate PRC using the iPRCs (Q_interp)  #
-    #       of an ODE given a vector of phases at which to pulse       #
-    # (time_points), a dictionary of symbolic parameters to be pulsed  #
-    # with their corresponding amplitudes (pulses), and the length of  #
-    #                           the pulse.                             #
+    #  dirPRC computes an approximate PRC using the direct method      #
+    #  (solving the phase shift directly after applying the pulse at   #
+    # various times on the limit cycle. The method requires times for  #
+    # the pulse to be applied (phases), a dictionary of pulses with    #
+    #    their corresponding amplitudes (pulses), and the length of    #
+    #                           the pulse (sigma).                     #
     ####################################################################
     
     # PRC pulsing parameter with index p_ind and amplitude amp
